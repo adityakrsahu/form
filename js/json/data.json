@@ -1,0 +1,51 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "login":[
+    {
+      "name":"name",
+      "mobile":"mobile",
+      "pass":"pass",
+      "id":"id"
+    },
+    {
+      "name":"aditya",
+      "mobile":"8873638109",
+      "pass":"12346",
+      "id":1
+    },
+    {
+      "name":"aditya kumar",
+      "mobile":"887363810",
+      "pass":"12",
+      "id":2
+    },
+    {
+      "name":"aditya kumar",
+      "mobile":"87363810",
+      "pass":"1236",
+      "id":3
+    },
+    {
+      "name":"aditya sahu",
+      "mobile":"8733810",
+      "pass":"236",
+      "id":4
+    }
+  ] 
+}

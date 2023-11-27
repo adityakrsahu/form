@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<style>
+    input[type="text"]{
+        margin: 8px;
+        padding: 13px;
+        width: 200px;
+        outline: none;
+    }
+    #add{
+        margin: 10px;
+        padding: 13px;
+        width: 450px;
+        margin-left: 55px;
+
+    }
+  
+    b{
+        margin-left: 15px;
+        font-size: 20px;
+    }
+    .g{
+        padding: 5px;
+        width: 600px;
+        background-color: rgb(232, 13, 86);
+    }
+   
+    .fo{
+        display: flex;
+        justify-content: center;
+    }
+
+    .gh{
+        display: flex;
+        justify-content: center;
+    }
+    .img{
+        width: 570px;
+        height: 664px;
+        background-image: url(data:image/png;base64,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);
+    }
+    a{
+        text-decoration: none;
+    }
+    #show{
+        width: 200px;
+        height: 45px;
+        border: 2px solid black;
+        color: rgb(0, 0, 0);
+        font-size: 40px;
+        border-radius: 10px 40px;
+        padding-left: 35px;
+        margin-left: 300px;
+        margin-top: -55px;
+    }
+    button{
+        margin: 5px;
+        width: 100px;
+        height: 45px;
+        margin-left: 55px;
+    }
+    #chp{
+        margin-left: 55px;
+    }
+    .error{
+        color: rgb(119, 5, 199);
+        font-size: 20px;
+    }
+    i{
+        font-size: 30px;
+    }
+    .reg{
+        width: 150px;
+        height: 50px;
+    }
+    #svg{
+        position: absolute;
+        z-index: 100px;
+    }
+    .p{
+        margin-left: 35px;
+        margin-top: -18px;
+    }
+    #rot1{
+        margin-top: 20px;
+    }
+    #show1{
+        display: none;
+    }
+    td{
+        width:120px;
+    }
+ 
+</style>
+<body onload="rot()">
+        <div class="fo">
+            <div class="img">
+
+            </div>
+            <div class="g">
+                <h1 style="margin-left: 55px;">Registrion from</h1>
+                <form>
+                    <div class="gh">
+                        <div>
+                            <div class="error" id="errorname"></div>
+                            <b>name</b><br>
+                            <input type="text" placeholder="name" id="naam" ><br>
+                            <div class="error" id="erroremail"></div>
+                            <b>email</b><br>
+                            <input type="text" placeholder="email" id="email" ><br>
+                            <div class="error" id="errornum"></div>
+                            <b>Moble no.</b><br>
+                            <input type="text" placeholder="number" id="num"><br>
+                        </div>
+                        <div>
+                            <div class="error" id="errorpass"></div>
+                            <b>password</b><br>
+                            <input type="text" placeholder="password" id="pass"><br>
+                            <div class="error" id="errorcpass"></div>
+                            <b>conform password</b><br>
+                            <input type="text" placeholder="conform password" id="cpass"><br>
+                            <div class="error" id="errorpin"></div>
+                            <b>Pin code</b><br>
+                            <input type="text" placeholder="Pin code" id="code"><br>
+                        </div>
+                    </div>
+                    <div class="error" id="erroradd"></div>
+                    <b style="padding-left: 40px;">Address</b><br>
+                    <input type="text" placeholder="Address" id="add"><br>
+                    <div class="error" id="errorcode"></div>
+                    <input id="chp" type="text" placeholder="captch code">
+                    <div id="show"></div>
+                    <button onclick="return rot1()"><i class="fa-solid fa-arrows-rotate"></i></button>
+                    <!-- <button onclick="rot()"><b>reference</b>reference</button> -->
+                   <div style="margin-left: 55px; padding-top: 10px;">
+                    <div class="error" id="errorbox"></div>
+                        <input id="box" type="checkbox">
+                        <p class="p">I have read and agree to the terms and conditions</p>
+                    </div>
+                    <button class="reg" onclick="return show()"><b>Registrion</b></button>
+                    <button><a href="./login.html"><b>login</b></a></button>
+                </form>
+            </div>
+        </div>
+        <div id="show1">
+            <center>
+            <form style="position:absolute;top: 400px;left: 550px;background-color:black">
+                <input type="text" placeholder="name" id="naam1" ><br>
+                <input type="text" placeholder="email" id="email1" ><br>
+                <input type="text" placeholder="number" id="num1"><br>
+                <input type="text" placeholder="password" id="pass1"><br>
+                <input type="text" placeholder="conform password" id="cpass1"><br>
+                <input type="text" placeholder="Pin code" id="code1"><br>
+                <input type="text" placeholder="Address" id="add1"><br>
+                <button onclick="update()">update</button>
+            </form>
+            </center>
+        </div>
+    <div id="rot1"></div>  
+    <script src="./index.js"></script>
+    <script src="./show.js"></script>
+
+
+</body>
+</html>

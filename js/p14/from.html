@@ -1,0 +1,144 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<style>
+    input[type="text"]{
+        margin: 8px;
+        padding: 13px;
+        width: 200px;
+        outline: none;
+    }
+    #add{
+        margin: 10px;
+        padding: 13px;
+        width: 450px;
+        margin-left: 55px;
+
+    }
+    b{
+        margin-left: 15px;
+        font-size: 20px;
+    }
+    .g{
+        padding: 5px;
+        width: 600px;
+        background-color: rgb(232, 13, 86);
+    }
+    .fr{
+        display: flex;
+        justify-content: center;
+    }
+    .gh{
+        display: flex;
+        justify-content: center;
+    }
+    .img{
+        width: 500px;
+        height: 400px;
+        margin-top: 135px;
+        background-image: url(./img/form.jpeg);
+    }
+    a{
+        text-decoration: none;
+    }
+    #show{
+        width: 200px;
+        height: 45px;
+        border: 2px solid black;
+        color: rgb(0, 0, 0);
+        font-size: 40px;
+        border-radius: 10px 40px;
+        padding-left: 35px;
+        margin-left: 300px;
+        margin-top: -55px;
+    }
+    button{
+        margin: 5px;
+        width: 100px;
+        height: 45px;
+        margin-left: 55px;
+    }
+    #chp{
+        margin-left: 55px;
+    }
+    .error{
+        color: rgb(119, 5, 199);
+        font-size: 20px;
+    }
+    i{
+        font-size: 30px;
+    }
+    .reg{
+        width: 150px;
+        height: 50px;
+    }
+    #svg{
+        position: absolute;
+        z-index: 100px;
+    }
+    .p{
+        margin-left: 35px;
+        margin-top: -18px;
+    }
+   
+</style>
+<body onload="rot()">
+    <div>
+        <div class="fr">
+            <div class="img"></div>
+            <div class="g">
+                <h1 style="margin-left: 55px;">Registrion from</h1>
+                <form action="form.php" method="post">
+                    <div class="gh">
+                        <div>
+                            <div class="error" id="errorname"></div>
+                            <b>name</b><br>
+                            <input type="text" placeholder="name" id="naam" ><br>
+                            <div class="error" id="erroremail"></div>
+                            <b>email</b><br>
+                            <input type="text" placeholder="email" id="email" ><br>
+                            <div class="error" id="errornum"></div>
+                            <b>Moble no.</b><br>
+                            <input type="text" placeholder="number" id="num"><br>
+                        </div>
+                        <div>
+                            <div class="error" id="errorpass"></div>
+                            <b>password</b><br>
+                            <input type="text" placeholder="password" id="pass"><br>
+                            <div class="error" id="errorcpass"></div>
+                            <b>conform password</b><br>
+                            <input type="text" placeholder="conform password" id="cpass"><br>
+                            <div class="error" id="errorpin"></div>
+                            <b>Pin code</b><br>
+                            <input type="text" placeholder="Pin code" id="code"><br>
+                        </div>
+                    </div>
+                    <div class="error" id="erroradd"></div>
+                    <b style="padding-left: 40px;">Address</b><br>
+                    <input type="text" placeholder="Address" id="add"><br>
+                    <div class="error" id="errorcode"></div>
+                    <input id="chp" type="text" placeholder="captch code">
+                    <div id="show"></div>
+                    <button onclick="rot()"><i class="fa-solid fa-arrows-rotate"></i></button>
+                   <div style="margin-left: 55px; padding-top: 10px;">
+                    <div class="error" id="errorbox"></div>
+                        <input id="box" type="checkbox">
+                        <p class="p">I have read and agree to the terms and conditions</p>
+                    </div>
+                    <button class="reg" onclick="return show()"><b>Registrion</b></button>
+                    <button><a href="./login.html"><b>login</b></a></button>
+                </form>
+            <div>
+        </div>
+    </div>    
+    <script src="./from.js"></script>
+
+</body>
+</html>

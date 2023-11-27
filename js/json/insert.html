@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="formi">
+        Enter name: <input id="name" type="text" name="name"><br>
+        Enter city: <input id="city" type="text" name="city"><br>
+        Enter contect: <input id="contect" type="text" name="contect"><br>
+        <input type="submit" value="data">
+    </form>
+    <script>
+        document.addEventListener('dOMContentLoaded',function(){
+            const form = document.getElementById('formi');
+            form.addEventListener('submit',function(e){
+                e.preventDefault();
+                const name =document.getElementById('name').value;
+                const city=document.getElementById('city').value;
+                const contect = document.getElementById('contect').value;
+                const input={
+                    name:name,
+                    city:city,
+                    contect:contect
+                }
+                fetch('http://localhost:200/form',{
+                    method:'POST',
+                    headers:{
+                        'content-type':'application/json'
+                    },
+                    body:JSON.stringify(input)
+                }),
+                then(alert("data submit"))
+            });
+        });
+    </script>
+</body>
+</html>

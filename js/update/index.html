@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .s{
+        text-align: center;  
+    }
+    .s input{
+        margin: 15px;
+        padding: 5px;
+    }
+    #show2{
+        display:none;
+    }
+</style>
+<body onload="show1()">
+    <div class="s">
+        <input type="text" placeholder="img src" id="img"><br>
+        <input type="text" placeholder="name" id="nam"><br>
+        <input type="text" placeholder="reting" id="ret"><br>
+        <input type="text" placeholder="prize" id="pri"><br>
+        <button onclick="show()">submit</button>
+    </div>
+    <div id="show2">
+        <input type="text" placeholder="img src" id="img1"><br>
+        <input type="text" placeholder="name" id="nam1"><br>
+        <input type="text" placeholder="reting" id="ret1"><br>
+        <input type="text" placeholder="prize" id="pri1"><br>
+        <button onclick="update()">submit</button>
+    </div>
+<div id="show1"></div>
+<script src="./index.js"></script>
+<script src="./show.js"></script>
+</body>
+</html>

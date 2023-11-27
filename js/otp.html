@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input[type="text"]{
+        width: 200px;
+        margin-top: 20px;
+        height: 30px;
+        font-size: 20px;
+    }
+    input[type="password"]{
+        width: 200px;
+        margin-top: 20px;
+        height: 30px;
+        font-size: 20px;
+    }
+    .button{
+        padding: 10px;
+        margin-top: 10px;
+        background-color: blue;
+        color: white;
+        font-size: 18px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .otp{
+        width: 200px;
+        height: 50px;
+        border: 2px so  black;
+        color: red;
+        font-size: 30px;
+        padding-top: 5px;
+    }
+    button{
+        padding: 10px;
+        margin-top: 10px;
+        background-color: blue;
+        color: white;
+        font-size: 15px;
+    }
+</style>
+<body>
+    <center>
+        <form>
+            <h1>Login</h1>
+            <input type="text" placeholder="username" id="username"><br>
+            <input type="password" placeholder="password" id="password"><br>
+            <button class="button" onclick="return show()">login</button>
+        </form>
+    </center>
+    <center>
+        <div class="otp" id="otp"></div>
+        <button onclick="gtp()">Generat OTP</button>
+    </center>
+    <script src="./otp.js"></script>
+</body>
+</html>

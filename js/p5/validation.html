@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    form input{
+        margin: 20px;
+        width: 400px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    input[type="text"]{
+        font-size: 20px;
+    }
+    #show{
+        width: 200px;
+        height: 50px;
+        border: 2px solid black;
+        color: red;
+        font-size: 40px;
+        border-radius: 10px 40px;
+    }
+    button{
+        margin: 5px;
+    }
+</style>
+<body onload="captcha()">
+    <center>
+        <h1>Registrion from</h1>
+    <form>
+        <input type="text" placeholder="name" id="nam"><br>
+        <input type="text" placeholder="username" id="username"><br>
+        <input type="text" placeholder="enter mobile no." id="mob"><br>
+        <input type="password" placeholder="password" id="pass"><br>
+
+        <input type="password" placeholder="confirm password" id="cpass"><br>
+        <input type="text" placeholder="captcha code"><br>
+        <button onclick="return validation()">Registrion</button>
+        <div id="show"></div>
+        <button onclick="captcha()">login</button>
+
+    </form>
+    </center>
+    
+    <script src="./validation.js" ></script>
+</body>
+</html>

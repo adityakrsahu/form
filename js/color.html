@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #div{
+        width: 200px;
+        height: 200px;
+        background-color: black;
+    }
+</style>
+<body>
+    <div id="div"></div>
+    <button onclick="st()">start</button>
+
+    <script>
+        function st(){
+            let arr = ["white","green","blue","pink","yellow"]
+            let l = arr.length;
+            let o = Math.random()*l;//decimal
+            let r = Math.floor(o)//round
+            document.getElementById('div').style.backgroundColor = arr[r];
+
+        }
+    </script>
+</body>
+</html>

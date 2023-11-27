@@ -1,0 +1,81 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "form": [
+    {
+      "name": "aditya sahu",
+      "email": "adityakr2019@gmail.com",
+      "num": 8873638109,
+      "password": "ad4",
+      "cpassword": "ad4",
+      "address": "chakhai",
+      "pin": 878788,
+      "id": 1
+    },
+    {
+      "name": "wdswa",
+      "email": "adityakr2019@gmail.com",
+      "mobile": 8873638109,
+      "password": "55@",
+      "cpassword": "55@",
+      "address": "chakhaji",
+      "pin": 848117,
+      "id": 3
+    },
+    {
+      "name": "adtya ",
+      "email": "adityakr2019@gmail.com",
+      "mobile": 8873638109,
+      "password": "55@",
+      "cpassword": "55@",
+      "address": "chakhaji",
+      "pin": 848117,
+      "id": 4
+    },
+    {
+      "name": "aditya sahu",
+      "email": "adityakr2019@gmail.com",
+      "num": 8873638109,
+      "password": "ad4",
+      "cpassword": "ad4",
+      "address": "chakhai",
+      "pin": 878788,
+      "id": 5
+    },
+    {
+      "name": "aditya sahu",
+      "email": "adityakr2019@gmail.com",
+      "num": 8873638109,
+      "password": "ad4",
+      "cpassword": "ad4",
+      "address": "chakhai",
+      "pin": 878788,
+      "id": 6
+    },
+    {
+      "name": "adtya kumar",
+      "email": "adityakr2019@gmail.com",
+      "mobile": 8873638109,
+      "password": "w@",
+      "cpassword": "w@",
+      "address": "chakhaji",
+      "pin": 848115,
+      "id": 7
+    }
+  ]
+}

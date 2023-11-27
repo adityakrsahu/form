@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="text"]{
+            margin: 8px;
+            padding: 13px;
+            width: 200px;
+            outline: none;
+        }
+        form{
+            margin-top: 200px;
+            
+        }
+        body{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <form>
+            <div id="errorname"></div>
+            <input id="uname" type="text" placeholder="username"><br>
+            <div id="errorpass"></div>
+            <input id="pass" type="text" placeholder="password"><br>
+            <div id="errorcode"></div>
+            <input id="code" type="text" placeholder="code"><br>
+            <div id="show"></div>
+            <button onclick="return log()">login</button>
+        </form>
+    </center>
+    <script src="./login.js"></script>
+</body>
+</html>
